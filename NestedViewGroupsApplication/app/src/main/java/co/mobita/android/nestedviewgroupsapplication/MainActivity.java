@@ -51,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
     // This function changes the quantity
     private void displayChange(int number){
         int price = number * 5;
+        String thanksMessage = "Thank you!";
         TextView priceTextView = (TextView)findViewById(R.id.price_text_view);
-        priceTextView.setText(NumberFormat.getCurrencyInstance().format((double) price));
+        priceTextView.setText(NumberFormat.getCurrencyInstance().format((double) price) + "\n" + thanksMessage);
     }
 }
